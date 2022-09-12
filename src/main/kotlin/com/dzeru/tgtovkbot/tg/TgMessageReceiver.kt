@@ -17,7 +17,7 @@ class TgMessageReceiver(val vkMessageSender: VkMessageSender, val botProperties:
             logger.info("TG Message: $update")
             val text = update.message.text
             val fromUserName = update.message.from.userName
-            val fromFirstName = if (null == update.message.from.firstName) "" else update.message.from.firstName
+            val fromFirstName = update.message.from.firstName
             val fromLastName = if (null == update.message.from.lastName) "" else update.message.from.lastName
             vkMessageSender.send(text, fromUserName, fromFirstName, fromLastName)
         } catch (e: TelegramApiException) {

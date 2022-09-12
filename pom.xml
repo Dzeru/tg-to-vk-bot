@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.6.21</kotlin.version>
-		<telegram-spring-boot-starter.version>0.22</telegram-spring-boot-starter.version>
+		<telegram-spring-boot-starter.version>0.26</telegram-spring-boot-starter.version>
 	</properties>
 	<dependencies>
 		<dependency>
