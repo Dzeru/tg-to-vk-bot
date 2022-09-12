@@ -1,0 +1,18 @@
+bot:
+  vk:
+    token: ${BOT_VK_TOKEN}
+    secret: ${BOT_VK_SECRET}
+    confirmation-code: ${BOT_VK_CONFIRMATION_CODE}
+    api-version: ${BOT_VK_API_VERSION}
+    url: ${BOT_VK_URL}
+    target-chat-id: ${BOT_VK_TARGET_CHAT_ID}
+  tg:
+    name: ${BOT_TG_NAME}
+    token: ${BOT_TG_TOKEN}
+
+server:
+  port: ${BOT_SERVER_PORT}
+
+spring:
+  main:
+    allow-circular-references: true
