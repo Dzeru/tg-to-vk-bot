@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.dzeru</groupId>
 	<artifactId>tg-to-vk-bot</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>tg-to-vk-bot</name>
 	<description>Telegram to VK bot</description>
 	<properties>

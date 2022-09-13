@@ -17,7 +17,7 @@ class VkMessageSender(val botProperties: BotProperties) {
 
     fun send(text: String, fromUserName: String, fromFirstName: String, fromLastName: String) {
         var startIndex = 0
-        var message = "От $fromFirstName $fromLastName $fromUserName:\n\n$text"
+        var message = "$fromFirstName $fromLastName $fromUserName:\n\n$text"
         logger.info("VK Message: $message")
         var lastSpaceIndex = 0
         while (startIndex < text.length) {
