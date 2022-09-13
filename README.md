@@ -30,12 +30,12 @@ mvn clean package
 Запустить джарник:
 
 ```
-java -jar tg-to-vk-bot-1.0.0.jar &
+java -jar tg-to-vk-bot-1.0.1.jar &
 ```
 
 ## Changelog
 
-### 1.0.1 - 12.09.2022
+### 1.0.1 - 13.09.2022
 
 fromUserName для Телеграма теперь необязателен. Сокращен шаблон для пересылки в VK.
 
