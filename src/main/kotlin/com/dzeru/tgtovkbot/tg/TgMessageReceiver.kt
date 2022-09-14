@@ -15,15 +15,15 @@ class TgMessageReceiver(val vkMessageSender: VkMessageSender, val botProperties:
     override fun onUpdateReceived(update: Update) {
         try {
             logger.info("TG Message: $update")
-            val text = update.message.text
+            val text = update.message.text ?: update.message.caption
             val fromUserName = if (null == update.message.from.userName) "" else update.message.from.userName
             val fromFirstName = update.message.from.firstName
             val fromLastName = if (null == update.message.from.lastName) "" else update.message.from.lastName
             vkMessageSender.send(text, fromUserName, fromFirstName, fromLastName)
         } catch (e: TelegramApiException) {
-            logger.error("TG API Exception: ${e.message}")
+            logger.error("TG API Exception: $e")
         } catch (e: Exception) {
-            logger.error("Another TG Exception: ${e.message}")
+            logger.error("Another TG Exception: $e")
         }
     }
 
